@@ -79,7 +79,28 @@ localhost:8081/get-voucher-code-status/{voucher-code}
 ```
 
 returns all voucher entities that are active and the users that used it.
-I tried to  handle concurrency isolations as much as I could.
 
+result:
+```
+{
+    "used_voucher_code_users": [
+        {
+            "PhoneNumber": "9126113",
+            "VoucherCode": "98CB-7558-JF9U",
+            "IsUsed": true
+        },
+        {
+            "PhoneNumber": "9126116",
+            "VoucherCode": "98CB-7558-JF9U",
+            "IsUsed": true
+        },
+        {
+            "PhoneNumber": "9126117",
+            "VoucherCode": "98CB-7558-JF9U",
+            "IsUsed": true
+        }
+    ]
+}
+```
 
 
